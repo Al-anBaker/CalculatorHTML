@@ -44,9 +44,10 @@
 #screen {
     resize: none;
     height: 20px;
-    font-size: larger;
+    font-size: 25px;
     max-width: inherit;
-
+    font-family: 'Tiny5';
+    padding-left: 5px;
 }
 
 .lights {
