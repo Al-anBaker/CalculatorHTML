@@ -1,0 +1,74 @@
+#title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 45px;
+}
+
+.calc {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    border: 3px black;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 15px;
+    border-style: ridge;
+}
+
+#num {
+    width: 85px;
+    height: 85px;
+    text-decoration: none;
+    border: 1px black;
+    background-color: darkorange;
+    color: black;
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 5%;
+}
+
+#num:hover {
+    transition-duration: 100ms;
+    background-color: orange;
+}
+
+.screencontainer {
+    max-width: 350px;
+    border-radius: 1px;
+    border-color: black;
+    background-color: darkgray;
+    border-style: groove;
+}
+#screen {
+    resize: none;
+    height: 20px;
+    font-size: larger;
+    max-width: inherit;
+
+}
+
+.lights {
+    color: darkgrey;
+    word-spacing: 20px;
+}
+
+#addLight {
+    padding-right: 30px;
+}
+#subLight {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#multiLight {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#diviLight {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#memLight {
+    padding-left: 30px;
+}

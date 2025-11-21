@@ -1,0 +1,134 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="calc.js"></script>
+    </head>
+    <body>
+        <h1 id="title" onclick="titleSwap()">The Calculator</h1>
+        <div class="calc">
+            <table class="indicator">
+                <tr>
+                    <td>
+                        <h2 class="lights" id="addLight">
+                            +
+                        </h2>
+                    </td>
+                    <td>
+                        <h2 class="lights" id="subLight">
+                            -
+                        </h2>
+                    </td>
+                    <td>
+                        <h2 class="lights" id="multiLight">
+                            *
+                        </h2>
+                    </td>
+                    <td>
+                        <h2 class="lights" id="diviLight">
+                            /
+                        </h2>
+                    </td>
+                    <td>
+                        <h2 class="lights" id="memLight">M</h2>
+                    </td>
+                </tr>
+            </table>
+            <div class="screencontainer">
+                <h3 id="screen"></h3>
+            </div>
+            <table class="numpad">
+                <tr>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('1')">
+                            1
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('2')">
+                            2
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('3')">
+                            3
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="Operation('Multi')">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('4')">
+                            4
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('5')">
+                            5
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('6')">
+                            6
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="Operation('Add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('7')">
+                            7
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('8')">
+                            8
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('9')">
+                            9
+                        </button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="Operation('Sub')">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('0')">0</button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="AddNumtoScreen('.')">.</button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="Operation('Divi')">/</button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="Sum()">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="num" onclick="FullClear()">Clear</button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="pushToMem()">Save</button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="pullFromMem()">Pull</button>
+                    </td>
+                    <td>
+                        <button id="num" onclick="MemClear()">Mem Clear</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
