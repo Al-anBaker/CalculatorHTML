@@ -6,7 +6,9 @@ let mode = "None";
 
 function AddNumtoScreen(num)
 {
-    document.getElementById("screen").innerHTML += num;
+    if (document.getElementById("screen").innerText.length <= 26) {
+        document.getElementById("screen").innerHTML += num;
+    }
 }
 
 function pushToMem() {
