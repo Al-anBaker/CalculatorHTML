@@ -3,11 +3,28 @@ let y = 0;
 let z = 0;
 let m = 0;
 let mode = "None";
+let pi = 3.14159;
+let e = 2.71828;
+let phi = 1.618;
 
 function AddNumtoScreen(num)
 {
     if (document.getElementById("screen").innerText.length <= 26) {
         document.getElementById("screen").innerHTML += num;
+    }
+}
+
+function AddConst(constant)
+{
+    switch(constant) {
+        case('Pi'):
+            document.getElementById('screen').innerText = pi;
+            break;
+        case('e'):
+            document.getElementById('screen').innerText = e;
+            break;
+        case('phi'):
+            document.getElementById('screen').innerText = phi;
     }
 }
 
@@ -65,6 +82,20 @@ function ChangeColor(operati) {
             document.getElementById("diviLight").style.color = "Yellow";
             break;
     }
+}
+
+function Square() {
+
+    x = parseFloat(document.getElementById('screen').innerText);
+    y = x ** 2;
+    document.getElementById('screen').innerText = y;
+}
+
+function Cube() {
+
+    x = parseFloat(document.getElementById('screen').innerText);
+    y = x ** 3;
+    document.getElementById('screen').innerText = y;
 }
 
 function Operation(operand) {

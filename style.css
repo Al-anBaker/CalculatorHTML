@@ -8,7 +8,7 @@
 .calc {
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 60%;
     transform: translate(-50%, -50%);
     border: 3px black;
     background-color: lightgray;
@@ -35,7 +35,7 @@
 }
 
 .screencontainer {
-    max-width: 350px;
+    max-width: 443px;
     border-radius: 1px;
     border-color: black;
     background-color: darkgray;
@@ -58,20 +58,20 @@
 }
 
 #addLight {
-    padding-right: 30px;
+    padding-right: 44px;
 }
 #subLight {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 44px;
+    padding-right: 44px;
 }
 #multiLight {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 44px;
+    padding-right: 44px;
 }
 #diviLight {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 44px;
+    padding-right: 44px;
 }
 #memLight {
-    padding-left: 30px;
+    padding-left: 44px;
 }
