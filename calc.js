@@ -61,6 +61,8 @@ function ClearLights() {
 function FullClear() {
     ClearLights();
     ClearScreen();
+    x = 0;
+    y = 0;
 }
 
 function ClearScreen()
