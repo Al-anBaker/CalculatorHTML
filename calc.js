@@ -191,6 +191,28 @@ function Sum()
     mode = "None"
     console.log(mode);
 }
+//Here we run a factorial operation on a number
+function factorial() {
+    //Again, we get the contents of the Screen and Parse it as a float
+    x = parseFloat(document.getElementById('screen').innerText)
+    //if the number is negative or is greater that 1000 return "Error"
+    if (x < 0 || x > 1000) {
+        document.getElementById('screen').innerText = 'ERROR'
+    }
+    //else if the number is 0 or 1 then return 1 to avoid an error
+    else if (x === 0 || x === 1) {
+        document.getElementById('screen').innerText = '1'
+    }
+    //if the number is valid then recursivly run the operation until the number is the correct ammount
+    else {
+        let result = 1;
+        for (let i = 2; i <= x; i++) {
+            result *= i;
+        }
+        //Once the operation is done set the Screen's Text to the result
+        document.getElementById('screen').innerText = result
+    }
+}
 
 
 //When the Title is clicked, we swap the title to this because yes
