@@ -42,7 +42,7 @@ function Double() {
 }
 
 
-//Tsis is called when we want to use a constant in the equasion 
+//This is called when we want to use a constant in the equasion 
 function AddConst(constant)
 {
     //based on the constant passed it will set the screen contents to a specified constant
