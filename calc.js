@@ -192,7 +192,7 @@ function Sum()
     console.log(mode);
 }
 //Here we run a factorial operation on a number
-function factorial() {
+function Factorial() {
     //Again, we get the contents of the Screen and Parse it as a float
     x = parseFloat(document.getElementById('screen').innerText)
     //if the number is negative or is greater that 1000 return "Error"
